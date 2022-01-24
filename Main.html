@@ -1,0 +1,205 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Managment Project</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="nav-wrapper">
+    
+    
+    
+        <nav>
+    
+    
+    
+            <ul class="nav-list">
+    
+                <img id="icon" src="img/bus.jpg" alt="">
+                <li class="nav-item"><a href="Main.html">Account</a></li>
+    
+    
+    
+                <li><a href="#">Logout</a></li>
+    
+            </ul>
+    
+    
+        </nav>
+    
+    </div>
+    <div class="employees">
+    
+        <h2>Employees</h2>
+         <div class="employee-list">
+             <li>
+                <div class="employee-card" id="employeel"> <img class="user-img" src="img/user.png" alt=""> 
+                    <span>
+                        <div class="employement-details" id="employeel-details">
+                            <span class="name-format">Aman</span>
+                            <span class="name-format">Rana</span>
+                            <br>
+                            <span>Developer</span>
+                            <br>
+                            <span>Tech Department</span>
+                            <br>
+                            <span>amanrana@gmail.com</span>
+                            <br>
+                            <span>E35000</span>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="employee-card" id="employee2"> <img class="user-img" src="img/user.png" alt=""> 
+                    <span>
+                        <div class="employement-details" id="employeel-details">
+                            <span class="name-format">Rohit</span>
+                            <span class="name-format">Thakur</span>
+                            <br>
+                            <span>Driver</span>
+                            <br>
+                            <span>Transport Department</span>
+                            <br>
+                            <span>rohitthakur@gmail.com</span>
+                            <br>
+                            <span>E45000</span>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="employee-card" id="employee3"> <img class="user-img" src="img/user.png" alt=""> 
+                    <span>
+                        <div class="employement-details" id="employeel-details">
+                            <span class="name-format">Anshul</span>
+                            <span class="name-format">Kumar</span>
+                            <br>
+                            <span>Head Software Developer</span>
+                            <br>
+                            <span>IT Department</span>
+                            <br>
+                            <span>anshulkumar@gmail.com</span>
+                            <br>
+                            <span>E55000</span>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="employee-card" id="employee4"> <img class="user-img" src="img/user.png" alt=""> 
+                    <span>
+                        <div class="employement-details" id="employeel-details">
+                            <span class="name-format">Ayush</span>
+                            <span class="name-format">Singhal</span>
+                            <br>
+                            <span>Digital Head</span>
+                            <br>
+                            <span>Marketing Department</span>
+                            <br>
+                            <span>ayushsinghal@gmail.com</span>
+                            <br>
+                            <span>E65000</span>
+                        </div>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="employee-card" id="employeel"> <img class="user-img" src="img/user.png" alt=""> 
+                    <span>
+                        <div class="employement-details" id="employeel-details">
+                            <span class="name-format">Abhishek</span>
+                            <span class="name-format">Kaundal</span>
+                            <br>
+                            <span>CEO</span>
+                            <br>
+                            <span>Managment Department</span>
+                            <br>
+                            <span>abhishekkaundal@gmail.com</span>
+                            <br>
+                            <span>E75000</span>
+                        </div>
+                    </span>
+                </div>
+            </li>
+        </div>
+    </div>
+    
+    <div class="Interviews"> 
+        <h2>Upcoming Interviews</h2>
+        <li>
+            <div class="list-item">
+                <h3>Marketing</h3>
+                <p>Social Media Content Specialist</p>
+                <button class="accept-btn" type="button" name="button">Accept</button>
+                <button class="reject-btn" type="button" name="button">Reject</button>
+            </div>
+        </li>
+        <li>
+            <div class="list-item">
+                <h3>Transport</h3>
+                <p>Driver</p>
+                <button class="accept-btn" type="button" name="button">Accept</button>
+                <button class="reject-btn" type="button" name="button">Reject</button>
+            </div>
+        </li>
+    </div>
+
+    <div id="employeeModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-header-content">
+                    <span>Add employee</span>
+                </div>
+            </header>
+            <div class="modal-container">
+                <label for="fname">First Name</label>
+                <input type="text" id="name">
+                <br>
+                <label for="fname">Last Name</label> <input id="surname" type="text">
+                <br>
+                <label for="fname">Position</label> <input id="position" type="text">
+                <br>
+                <label for="fname">Department</label> <input id="department" type="text">
+                <br>
+                <label for="fname">Email</label> <input id="email" type="text">
+                <br>
+                <label for="fname">Salary</label>
+                <br>
+                <input id="salary" type="text">
+                <button id="confirmBtn" type="button" name="button" onclick="addEmployee()">Confirm</button>
+            </div>
+            <footer class="modal-footer">
+            </footer>
+        </div>
+    </div>
+
+    <div id="interviewModal" class="modal">
+        <div class="modal-content">
+            <header class="modal-header">
+                <div class="modal-header-content">
+                    <span>Add interview</span>
+                </div>
+            </header>
+            <div class="modal-container">
+                <label for="fname">Department</label> <input type="text" id="int-department">
+                <br>
+                <label for="fname">Position</label>
+                <input id="int-position" type="text">
+                <br>
+                <button id="confirmIntBtn" type="button" name="button" onclick="addInterview()">Confirm</button>
+            </div>
+            <footer class="modal-footer">
+            </footer>
+        </div>
+    </div>
+        
+        
+        <button class="btn" type="button" name="button" onclick="showAddIntModal()">Add Interview</button>
+        <button class="btn" type="button" name="button" onclick="showAddEmpModal()">Add Employee</button>
+        <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
